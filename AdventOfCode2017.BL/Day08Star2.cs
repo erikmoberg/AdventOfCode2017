@@ -1,5 +1,4 @@
-﻿using Microsoft.CodeAnalysis.CSharp.Scripting;
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,20 +7,20 @@ namespace AdventOfCode2017.BL
 {
     public class Day08Star2
     {
-        public int GetWithRoslyn(string[] input)
-        {
-            var maxValue = int.MinValue;
-            var values = new ConcurrentDictionary<string, int>();
-            foreach (var line in input)
-            {
-                var parts = line.Split(' ');
-                var value = CSharpScript.EvaluateAsync<bool>(values.GetOrAdd(parts[4], 0) + parts[5] + int.Parse(parts[6])).Result ? (parts[1] == "inc" ? 1 : -1) * int.Parse(parts[2]) : 0;
-                values.AddOrUpdate(parts[0], value, (s, i) => i + value);
-                maxValue = Math.Max(maxValue, values.Values.Max());
-            }
+        //public int GetWithRoslyn(string[] input)
+        //{
+        //    var maxValue = int.MinValue;
+        //    var values = new ConcurrentDictionary<string, int>();
+        //    foreach (var line in input)
+        //    {
+        //        var parts = line.Split(' ');
+        //        var value = CSharpScript.EvaluateAsync<bool>(values.GetOrAdd(parts[4], 0) + parts[5] + int.Parse(parts[6])).Result ? (parts[1] == "inc" ? 1 : -1) * int.Parse(parts[2]) : 0;
+        //        values.AddOrUpdate(parts[0], value, (s, i) => i + value);
+        //        maxValue = Math.Max(maxValue, values.Values.Max());
+        //    }
 
-            return maxValue;
-        }
+        //    return maxValue;
+        //}
 
         public int Get(string[] input)
         {
