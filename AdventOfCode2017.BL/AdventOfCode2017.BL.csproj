@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coordinate.cs" />
     <Compile Include="Day02Star2.cs" />
     <Compile Include="Day02Star1.cs" />
     <Compile Include="Day01Star2.cs" />
@@ -74,11 +75,28 @@
     <Compile Include="Day11Star2.cs" />
     <Compile Include="Day12Star1.cs" />
     <Compile Include="Day12Star2.cs" />
+    <Compile Include="Day13Star1.cs" />
+    <Compile Include="Day13Star2.cs" />
+    <Compile Include="Day14Star1.cs" />
+    <Compile Include="Day14Star2.cs" />
+    <Compile Include="Day15Star1.cs" />
+    <Compile Include="Day15Star2.cs" />
+    <Compile Include="Day16Star1.cs" />
+    <Compile Include="Day16Star2.cs" />
+    <Compile Include="Day17Star1.cs" />
+    <Compile Include="Day17Star2.cs" />
+    <Compile Include="Day18Star1.cs" />
+    <Compile Include="Day18Star2.cs" />
+    <Compile Include="Model\FirewallEntry.cs" />
+    <Compile Include="Model\Instruction.cs" />
     <Compile Include="Model\Entry.cs" />
     <Compile Include="IResultGenerator.cs" />
     <Compile Include="Model\MyGroup.cs" />
+    <Compile Include="Model\Processor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Square.cs" />
+    <Compile Include="Model\Region.cs" />
+    <Compile Include="Model\TwoValues.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
