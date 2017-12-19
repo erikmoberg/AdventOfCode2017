@@ -87,6 +87,8 @@
     <Compile Include="Day17Star2.cs" />
     <Compile Include="Day18Star1.cs" />
     <Compile Include="Day18Star2.cs" />
+    <Compile Include="Day19Star1.cs" />
+    <Compile Include="Day19Star2.cs" />
     <Compile Include="Model\FirewallEntry.cs" />
     <Compile Include="Model\Instruction.cs" />
     <Compile Include="Model\Entry.cs" />
