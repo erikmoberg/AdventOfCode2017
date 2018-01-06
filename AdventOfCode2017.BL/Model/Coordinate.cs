@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2017.BL
+﻿namespace AdventOfCode2017.BL.Model
 {
     public class Coordinate
     {

@@ -9,8 +9,13 @@ namespace AdventOfCode2017.Test
     {
         protected TResult Get(TInput input)
         {
-            var target = new TTarget();
+            var target = this.GetTarget();
             return target.Get(input);
+        }
+
+        protected TTarget GetTarget()
+        {
+            return new TTarget();
         }
     }
 }
