@@ -101,6 +101,8 @@
     <Compile Include="Day19Star2Tests.cs" />
     <Compile Include="Day20Star1Tests.cs" />
     <Compile Include="Day20Star2Tests.cs" />
+    <Compile Include="Day22Star2Tests.cs" />
+    <Compile Include="Day22Star1Tests.cs" />
     <Compile Include="Day21Star2Tests.cs" />
     <Compile Include="Day21Star1Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,6 +121,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="input\Day22Test1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="input\Day22.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="input\Day21Test1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

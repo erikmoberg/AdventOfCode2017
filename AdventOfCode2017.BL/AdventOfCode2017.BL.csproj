@@ -50,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day22Star2.cs" />
+    <Compile Include="Day22Star1.cs" />
     <Compile Include="Model\Coordinate.cs" />
     <Compile Include="Day02Star2.cs" />
     <Compile Include="Day02Star1.cs" />
@@ -98,6 +100,7 @@
     <Compile Include="IResultGenerator.cs" />
     <Compile Include="Model\MyGroup.cs" />
     <Compile Include="Model\Processor.cs" />
+    <Compile Include="Model\NodeState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Square.cs" />
     <Compile Include="Model\Region.cs" />
