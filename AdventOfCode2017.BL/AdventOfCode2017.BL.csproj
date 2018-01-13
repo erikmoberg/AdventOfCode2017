@@ -55,7 +55,6 @@
     <Compile Include="Day23Star1.cs" />
     <Compile Include="Day22Star2.cs" />
     <Compile Include="Day22Star1.cs" />
-    <Compile Include="Instruction2.cs" />
     <Compile Include="Model\Coordinate.cs" />
     <Compile Include="Day02Star2.cs" />
     <Compile Include="Day02Star1.cs" />
