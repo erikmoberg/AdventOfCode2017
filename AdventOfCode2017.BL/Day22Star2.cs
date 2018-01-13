@@ -25,12 +25,6 @@ namespace AdventOfCode2017.BL
                 var coords = x + y / 1000d;
                 var currentState = NodeState.Clean;
                 var hasValue = nodes.TryGetValue(coords, out currentState);
-                var turnDirection = currentState == NodeState.Clean ? 3 :
-                                    currentState == NodeState.Weakened ? 0 :
-                                    currentState == NodeState.Infected ? 1 :
-                                    2;
-
-                direction = (direction + turnDirection) % 4;
                 var newState = (NodeState)((((int)currentState) + 1) % 4);
 
                 if (hasValue)
@@ -41,6 +35,12 @@ namespace AdventOfCode2017.BL
                 {
                     nodes.Add(coords, newState);
                 }
+
+                direction = (direction + 
+                            (currentState == NodeState.Clean ? 3 :
+                             currentState == NodeState.Weakened ? 0 :
+                             currentState == NodeState.Infected ? 1 :
+                             2)) % 4;
 
                 x += direction == 1 ? 1 : direction == 3 ? -1 : 0;
                 y += direction == 2 ? 1 : direction == 0 ? -1 : 0;
